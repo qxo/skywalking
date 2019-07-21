@@ -123,4 +123,9 @@ public class NoopSpan implements AbstractSpan {
     @Override public AbstractSpan asyncFinish() {
         return this;
     }
+
+  @Override
+  public boolean isInAsyncMode() {
+    return false;
+  }
 }
